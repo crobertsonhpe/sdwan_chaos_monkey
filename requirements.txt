@@ -1,0 +1,21 @@
+# SD-WAN Chaos Monkey Requirements
+# Python package dependencies for the chaos engineering tool
+
+# HTTP client library for API requests
+requests>=2.28.0,<3.0.0
+
+# HTTP adapter with retry capabilities (included with requests but specified for clarity)
+urllib3>=1.26.0,<3.0.0
+
+# Type checking support (for Python < 3.8 compatibility)
+typing-extensions>=4.0.0; python_version < "3.8"
+
+# Optional: Enhanced JSON handling (if needed for complex API responses)
+# simplejson>=3.17.0
+
+# Development/Testing Dependencies (optional - uncomment if needed)
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# black>=22.0.0
+# flake8>=5.0.0
+# mypy>=1.0.0
