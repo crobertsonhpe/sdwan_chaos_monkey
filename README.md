@@ -145,6 +145,8 @@ python3 sdwan_chaos_monkey.py \
 4. **Identifies** WAN-side interfaces (excludes link-local addresses)
 5. **Builds** test target inventory
 
+Note: The solution does not currently support "ip alias interfaces" so if the WAN side is using untagged sub-interfaces with different WAN labels it will shut down the entire interface this could lead to full outage events when only partial or no-impact is expected. 
+
 ### Chaos Testing Phase
 
 1. **Selects** next interface in rotation
